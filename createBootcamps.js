@@ -1,4 +1,4 @@
-const { Bootcamp } = require('./models'); // Asegúrate de importar correctamente el modelo
+const { Bootcamp } = require('./models'); 
 
 const bootcamps = [
   {
