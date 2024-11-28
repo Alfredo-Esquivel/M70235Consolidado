@@ -1,6 +1,6 @@
 // models/bootcamp.model.js
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/db.config'); // Asegúrate de que esta configuración exista
+const sequelize = require('../config/db.config'); 
 
 /*class Bootcamp extends Model {}
 
@@ -27,11 +27,11 @@ module.exports = Bootcamp;*/
 const Bootcamp = sequelize.define('Bootcamp', {
   title: {
     type: DataTypes.STRING,
-    allowNull: false,  // Asegúrate de que `title` sea obligatorio
+    allowNull: false,  // Asegúra  que `title` sea obligatorio
   },
   cue: {
     type: DataTypes.INTEGER,
-    allowNull: false,  // Asegúrate de que `cue` sea obligatorio
+    allowNull: false,  // Asegúra que `cue` sea obligatorio
   },
   description: {
     type: DataTypes.STRING,

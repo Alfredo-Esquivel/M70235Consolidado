@@ -1,8 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const sequelize = require('./config/db.config');
-const { User, Bootcamp } = require('./models');  // Asegúrate de que los modelos están correctamente importados
-const app = express();
+const { User, Bootcamp } = require('./models');  
 const port = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
@@ -65,7 +64,7 @@ const bootcampsData = [
   console.log('Usuarios asignados a los Bootcamps');
 });
 
-// Rutas de ejemplo para interactuar con los controladores
+
 
 // Consultar el Bootcamp por ID e incluir los usuarios
 app.get('/bootcamp/:id', async (req, res) => {
